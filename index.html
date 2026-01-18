@@ -1,38 +1,37 @@
-<!DOCTYP html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies Bucket🎬</title>
 
-  <html>
+  <link rel="stylesheet" href="style.css" />
 
-  <head>
-    <title>Movie Site</title>
-    <link href="style.css" rel="stylesheet" />
-    <link href="favicon.png" rel="icon" />
-  
-  </head>
+  <!-- Env config must load first -->
+  <script src="env.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
 
-  <body>
-    <div class="topnav">
-      <a class="active" href="#"><b>Movie Site</b></a>
-      <form role="search" id="form">
-        <input type="search" id="query" name="q" placeholder="Search...">
-      </form>
-    </div>
-    <div style="padding: 20px;">
-    </div>
+<body>
+  <header class="header">
+    <h1>Movies Bucket🎬</h1>
+    <p>Find movies instantly</p>
+    <nav class="nav">
+  <a href="index.html" class="active">Home</a>
+  <a href="favorites.html">Favorites ❤</a>
+</nav>
 
-    <section id="section">
-      <!-- <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="https://upload.wikimedia.org/wikipedia/en/d/de/WishMoviePoster.jpg" class="thumbnail">
-          <div class="container">
-            <h3><b>Movie Title</b></h3>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    </section>
+  </header>
 
-  </body>
-    <script src="script.js"></script>
+  <form id="form" class="search-form">
+    <input
+      type="text"
+      id="query"
+      placeholder="Search movies..."
+      autocomplete="off"
+    />
+  </form>
 
-  </html>
+  <main id="section" class="container"></main>
+</body>
+</html>
